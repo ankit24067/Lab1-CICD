@@ -42,6 +42,7 @@ jobs:
       - name: Build Docker image
         run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/lab1-cicd:latest .
 
+
       # Push Docker image to DockerHub
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/lab1-cicd:latest
